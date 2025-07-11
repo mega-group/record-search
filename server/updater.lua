@@ -4,10 +4,10 @@ end
 
 function GetLatestVersion(callback)
     PerformHttpRequest(
-        "https://raw.githubusercontent.com/mega-group/record-search/refs/heads/main/fxmanifest.lua",
+        "https://raw.githubusercontent.com/mega-group/record-search/main/fxmanifest.lua",
         function(status, body, headers)
             if status == 200 and body then
-                local latest = string.match(body, 'version%s+"([%d%.]+)"')
+                local latest = string.match(body, "version%s+['\"]([%d%.]+)['\"]")
                 callback(latest)
             else
                 callback(nil)
@@ -28,6 +28,7 @@ function CheckForUpdate()
             print("^2[Updater]^0 Thank you for using Record Search! We wish you the best in your FivePD adventures!")
         else
             print(("^1[Updater]^0 You have version %s which is outdated. Please update to version %s."):format(current, latest))
+            print("^1[Updater]^0 You can find the latest version at https://github.com/mega-group/record-search/releases")
         end
     end)
 end
