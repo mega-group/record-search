@@ -2,6 +2,8 @@
 
 First of all thank you for even checking this out. I am not usually writing LUA things but I have been wanting to do this for a while and finally decided to do so.
 
+Join our Discord: https://discord.gg/J9N6evPF8Y (select the Mega Group role)
+
 # Notes
 I made this for myself so it is setup to support my setup. I keep everything under the same database so that's why I can use oxmysql to check the database for my records.
 I may make edits in the future if the desire is wanted. I have given a config to configure the export so if there's a resource that you can run to do this then just change the export. You can also just change the export (via the config.lua in client folder) if you don't use oxmysql just remember they need to work the same way (which I personally have no idea much about SQL databases)
