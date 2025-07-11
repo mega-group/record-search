@@ -6,7 +6,7 @@ Join our Discord: https://discord.gg/J9N6evPF8Y (select the Mega Group role)
 
 # Notes
 I made this for myself so it is setup to support my setup. I keep everything under the same database so that's why I can use oxmysql to check the database for my records.
-I may make edits in the future if the desire is wanted. I have given a config to configure the export so if there's a resource that you can run to do this then just change the export. You can also just change the export (via the config.lua in client folder) if you don't use oxmysql just remember they need to work the same way (which I personally have no idea much about SQL databases)
+I may make edits in the future if the desire is wanted. I have given a simple line in the server.lua to easily change the export. This will save you a good minute lol.
 
 # The UI is trash
 Well again I made this for myself so I wasn't making it look pretty. I may come back in the future to tighty it up and make it look better. I may even bring in some extra stuff but let me know if that's something you're interested in.
