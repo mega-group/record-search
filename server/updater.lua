@@ -4,7 +4,7 @@ end
 
 function GetLatestVersion(callback)
     PerformHttpRequest(
-        "https://raw.githubusercontent.com/<YourUser>/<YourRepo>/main/fxmanifest.lua",
+        "https://raw.githubusercontent.com/mega-group/record-search/refs/heads/main/fxmanifest.lua",
         function(status, body, headers)
             if status == 200 and body then
                 local latest = string.match(body, 'version%s+"([%d%.]+)"')
